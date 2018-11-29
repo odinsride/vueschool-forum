@@ -1,6 +1,8 @@
-# vueschool-forum2
+# vueschool-forum
 
 > A Vue.js project
+
+Sample Application built alongside VueSchool's [The Vue.js Master Class](https://vueschool.io/courses/the-vuejs-master-class)
 
 ## Build Setup
 
