@@ -22,6 +22,8 @@
 
 <script>
 import sourceData from '@/data.json'
+import {countObjectProperties} from '@/utils'
+
 export default {
   props: {
     thread: {
@@ -31,7 +33,7 @@ export default {
   },
   computed: {
     repliesCount () {
-      return Object.keys(this.thread.posts).length - 1
+      return countObjectProperties(this.thread.posts) - 1
     },
     user () {
       return sourceData.users[this.thread.userId]
