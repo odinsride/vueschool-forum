@@ -30,13 +30,11 @@ export default {
   },
   methods: {
     save () {
-      const postId = 'greatPost' + Math.random()
       const post = {
         text: this.text,
         publishedAt: Math.floor(Date.now() / 1000),
         threadId: this.threadId,
-        userId: 'NnooaWj4KHVxbhKwO1pEdfaQDsD2',
-        '.key': postId
+        userId: 'NnooaWj4KHVxbhKwO1pEdfaQDsD2'
       }
 
       this.text = ''
