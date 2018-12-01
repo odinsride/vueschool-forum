@@ -85,7 +85,6 @@ figcaption {
 
 .forum-list .forum-listing:nth-child(odd) {
     background: rgba(73, 89, 96, 0.06);
-    border-bottom-left-radius: 20px;
 }
 
 .forum-list .forum-listing:last-child {
