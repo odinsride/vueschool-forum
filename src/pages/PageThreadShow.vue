@@ -15,7 +15,6 @@
     </p>
     <PostList :posts="posts"/>
     <PostEditor
-      @save="addPost"
       :threadId="id"
     />
   </div>
@@ -44,11 +43,6 @@ export default {
       const postIds = Object.values(this.thread.posts)
       return Object.values(this.$store.state.posts)
         .filter(post => postIds.includes(post['.key']))
-    }
-  },
-  methods: {
-    addPost ({post}) {
-      this.$store.dispatch('createPost', post)
     }
   }
 }
