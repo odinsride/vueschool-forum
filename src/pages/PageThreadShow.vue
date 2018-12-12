@@ -50,7 +50,7 @@ export default {
       return this.$store.getters.threadRepliesCount(this.thread['.key'])
     },
     contributorsCount () {
-      return countObjectProperties(this.thread.contributers)
+      return countObjectProperties(this.thread.contributors)
     },
     user () {
       return this.$store.state.users[this.thread.userId]
