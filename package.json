@@ -8,9 +8,11 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "db:seed": "firebase database:set / src/data.json -y"
   },
   "dependencies": {
+    "dotenv": "^6.2.0",
     "firebase": "^5.8.2",
     "moment": "^2.22.2",
     "nprogress": "^0.2.0",
